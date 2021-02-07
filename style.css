@@ -1,0 +1,74 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #E4E6E9;
+  padding-bottom: 0;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  color: #393939;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.mrgb-30 {
+  margin-bottom: 30px;
+}
+.account-invoice {
+  margin: 50px 0;
+}
+.account-invoice .innvoice-wrap {
+  background: #fff;
+  box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+  padding: 30px;
+}
+.account-invoice .heading-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.account-invoice .heading-wrap .logo img {
+  width: 250px;
+}
+.account-invoice .heading-wrap .content {
+  font-weight: 600;
+}
+.account-invoice .heading-wrap span {
+  display: block;
+}
+.innvoice-table {
+  font-size: 16px;
+}
+.innvoice-table th {
+  font-size: 18px;
+}
+.innvoice-table>tbody>tr>td, .innvoice-table>tbody>tr>th, 
+.innvoice-table>tfoot>tr>td, .innvoice-table>tfoot>tr>th, 
+.innvoice-table>thead>tr>td, .innvoice-table>thead>tr>th,
+.innvoice-table>thead:first-child>tr:first-child>td, 
+.innvoice-table>thead:first-child>tr:first-child>th {
+  border:none;
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: middle;
+}
+.innvoice-table thead th {
+  background: #11274b;
+  color: #fff;
+}
+.innvoice-table tfoot th strong{
+  text-align: right;
+  padding-right: 30px;
+  display: block;
+}
+.innvoice-table tfoot .order-total td {
+  background: #3a7c23;
+  color: #fff;
+}
