@@ -15,36 +15,73 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
-  margin-bottom: 5px;
+ margin: 0;
 }
 .mrgb-30 {
   margin-bottom: 30px;
 }
 .account-invoice {
+  font-size: 14px;
   margin: 50px 0;
 }
+.account-invoice .p-0 {
+  padding: 0;
+}
 .account-invoice .innvoice-wrap {
-  background: #fff;
+  background: #3a7c23;
   box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+}
+.account-invoice .innvoice-left {
+  background: #3a7c23;
+  color: #fff;
   padding: 30px;
 }
-.account-invoice .heading-wrap {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.account-invoice .company-info {
+  margin-bottom: 50px;
 }
-.account-invoice .heading-wrap .logo img {
-  width: 250px;
+.account-invoice .company-info .title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
-.account-invoice .heading-wrap .content {
+.account-invoice .company-info .title:after {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100px;
+}
+.account-invoice .logo{
+  color: #fff;
+  font-size: 42px;
   font-weight: 600;
+  text-transform: uppercase;
 }
-.account-invoice .heading-wrap span {
+.account-invoice .company-info .content {
+  font-weight: 600;
+  font-size: 18px;
+}
+.account-invoice .company-info span {
   display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.account-invoice .table-wrap {
+  background: #fff;
+}
+.account-invoice .innvoice-table-content {
+  padding: 30px;
+}
+.account-invoice .innvoice-no {
+  text-align: right;
+  margin-bottom: 15px;
 }
 .innvoice-table {
   font-size: 16px;
+  margin-bottom: 0;
 }
 .innvoice-table th {
   font-size: 18px;
@@ -56,6 +93,7 @@ h1,h2,h3,h4,h5,h6 {
 .innvoice-table>thead:first-child>tr:first-child>th {
   border:none;
   border: 1px solid #ddd;
+  border-left: none;
   padding: 10px;
   vertical-align: middle;
 }
