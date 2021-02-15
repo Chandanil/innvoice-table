@@ -28,49 +28,51 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 .account-invoice .innvoice-wrap {
-  background: #3a7c23;
+  background: #fff;
   box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
-}
-.account-invoice .innvoice-left {
-  background: #3a7c23;
-  color: #fff;
   padding: 30px;
 }
-.account-invoice .company-info {
-  margin-bottom: 50px;
+.account-invoice .company-info  {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+.account-invoice .company-info,
+.account-invoice .info-detail,
+.account-invoice .total-wrap {
+  display: flex;
 }
-.account-invoice .company-info .title {
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+.account-invoice .company-info .left-info,
+.account-invoice .info-to,
+.account-invoice .note {
+  margin-right: auto;
 }
-.account-invoice .company-info .title:after {
-  background: #fff;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 100px;
+.account-invoice .title {
+  margin-bottom: 10px;
+}
+.account-invoice p{
+  margin-bottom: 5px;
 }
 .account-invoice .logo{
-  color: #fff;
+  color: #333;
   font-size: 42px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.account-invoice .company-info .content {
-  font-weight: 600;
-  font-size: 18px;
+.account-invoice .innvoice-no ul li,
+.account-invoice .total-wrap ul li {
+  list-style-type: none;
 }
-.account-invoice .company-info span {
-  display: block;
-  font-size: 14px;
-  margin-top: 5px;
-  font-weight: normal;
+.account-invoice .innvoice-no li,
+.account-invoice .total-wrap li {
+  margin: 7px 0;
 }
-.account-invoice .table-wrap {
-  background: #fff;
+.account-invoice .innvoice-no li:first-child,
+.account-invoice .total-wrap li:first-child{
+  margin-top: 0;
+}
+.account-invoice .innvoice-no li:last-child,
+.account-invoice .total-wrap li:last-child{
+  margin-bottom: 0;
 }
 .account-invoice .innvoice-table-content {
   padding: 30px;
@@ -81,7 +83,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .innvoice-table {
   font-size: 16px;
-  margin-bottom: 0;
 }
 .innvoice-table th {
   font-size: 18px;
@@ -101,12 +102,9 @@ h1,h2,h3,h4,h5,h6 {
   background: #11274b;
   color: #fff;
 }
-.innvoice-table tfoot th strong{
-  text-align: right;
-  padding-right: 30px;
-  display: block;
+.account-invoice .total-wrap {
+  align-items: center;
 }
-.innvoice-table tfoot .order-total td {
-  background: #3a7c23;
-  color: #fff;
+.account-invoice .total-wrap li strong{
+  margin-right: 10px;
 }
