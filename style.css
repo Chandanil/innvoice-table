@@ -42,11 +42,16 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
 }
 .account-invoice .company-info .left-info,
-.account-invoice .info-to,
-.account-invoice .note {
+.account-invoice .info-to {
   margin-right: auto;
 }
-.account-invoice .title {
+.account-invoice .info-detail .info-to .title{
+  margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+  padding-bottom: 5px;
+}
+.account-invoice .info-detail .info-to .name {
   margin-bottom: 10px;
 }
 .account-invoice p{
@@ -84,9 +89,6 @@ h1,h2,h3,h4,h5,h6 {
 .innvoice-table {
   font-size: 16px;
 }
-.innvoice-table th {
-  font-size: 18px;
-}
 .innvoice-table>tbody>tr>td, .innvoice-table>tbody>tr>th, 
 .innvoice-table>tfoot>tr>td, .innvoice-table>tfoot>tr>th, 
 .innvoice-table>thead>tr>td, .innvoice-table>thead>tr>th,
@@ -94,7 +96,6 @@ h1,h2,h3,h4,h5,h6 {
 .innvoice-table>thead:first-child>tr:first-child>th {
   border:none;
   border: 1px solid #ddd;
-  border-left: none;
   padding: 10px;
   vertical-align: middle;
 }
@@ -102,9 +103,10 @@ h1,h2,h3,h4,h5,h6 {
   background: #11274b;
   color: #fff;
 }
-.account-invoice .total-wrap {
-  align-items: center;
-}
 .account-invoice .total-wrap li strong{
   margin-right: 10px;
+}
+.account-invoice .note {
+  text-align: center;
+  font-weight: 600;
 }
